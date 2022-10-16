@@ -1,0 +1,13 @@
+boys = ['Peter', 'Alex', 'John', 'Arthur', 'Richard']
+girls = ['Kate', 'Liza', 'Kira', 'Emma', 'Trisha']
+if (len(boys) == len(girls)):
+    boys_sort = sorted(boys)
+    girls_sort = sorted(girls)
+    meet = list(zip(boys_sort, girls_sort))
+    print('Идеальные пары:')
+    n = 0
+    while( n < len(meet) ):
+        print(boys_sort[n] + ' и '+ girls_sort[n])
+        n += 1
+else:
+    print('Внимание! Кто-то может остаться без пары!')
